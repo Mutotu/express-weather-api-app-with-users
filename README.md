@@ -29,7 +29,7 @@
 - adjust your config/config.json
 - create your database and call it 'weather'
 - in your backend folder, look at this erb and create your models accordingly
-  ![alt text](./weathererb.jpg)
+  ![alt text](./erb.jpg)
   - to create your models remember table name should be SINGULAR
   - `sequelize model:generate --name=tableName --attributes columnName:dataType,etc`
   - it is a many to many relationship so once you've run your migrations with `sequelize db:migrate` make sure to adjust the relationships!!!!!!
