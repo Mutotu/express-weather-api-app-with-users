@@ -46,6 +46,10 @@
 
 3 ROUTES which means probably 3 functions
 
+1. search general
+1. search one location
+1. save location
+
 - Search Function
 - implement the weather api in your backend so when you hit the backend with a POST request, the backend will make a request to the weather api and return its response
 - NOTE the weather api already returns json so instead of res.json({resultsFromWeather})
@@ -67,10 +71,12 @@
 
 ## Frontend
 
-3 ROUTES which means probably 3 functions
--create account
--login
--get saved locations
+4 ROUTES which means probably 4 functions
+
+1. create account
+1. login
+1. get saved locations
+1. delete location association with uer
 
 - ### User Auth Goals
 - post on form submission
