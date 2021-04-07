@@ -58,6 +58,9 @@
 - Save Function
 - now if a user wants to save the data from the search you will save the id of that location (from the search result that you get) and save that to the locations table
 
+  - if that location already exists in the location table then don't create a new one!!
+    (maybe use findOrCreate instead of create in your model)
+
 - Delete Function
 - when a user 'unsaves' a location delete the association
 - Not to delete the saved location under locations table but instead just delete the association between that user and the location
