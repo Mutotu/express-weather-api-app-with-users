@@ -32,7 +32,7 @@
   ![alt text](./erd.jpg)
   - to create your models remember table name should be SINGULAR
   - `sequelize model:generate --name=tableName --attributes columnName:dataType,etc`
-  - it is a many to many relationship so once you've run your migrations with `sequelize db:migrate` make sure to adjust the relationships
+  - it is a many to many relationship so once you've run your migrations with `sequelize db:migrate` make sure to adjust the relationships!!!!!!
 
 ## Backend
 
@@ -47,8 +47,8 @@
 3 ROUTES which means probably 3 functions
 
 1. search general
-1. search one locale
-1. save locale
+1. search one location
+1. save location
 
 - Search Function
 - implement the weather api in your backend so when you hit the backend with a POST request, the backend will make a request to the weather api and return its response
@@ -60,14 +60,14 @@
 - make sure to use axios in your response!!! also use axios.get('api link')
 
 - Save Function
-- now if a user wants to save the data from the search you will save the id of that locale (from the search result that you get) and save that to the locales table
+- now if a user wants to save the data from the search you will save the id of that location (from the search result that you get) and save that to the locations table
 
-  - if that locale already exists in the locale table then don't create a new one!!
+  - if that location already exists in the location table then don't create a new one!!
     (maybe use findOrCreate instead of create in your model)
 
 - Delete Function
-- when a user 'unsaves' a locale delete the association
-- Not to delete the saved locale under locales table but instead just delete the association between that user and the locale
+- when a user 'unsaves' a location delete the association
+- Not to delete the saved location under locations table but instead just delete the association between that user and the location
 
 ## Frontend
 
@@ -75,8 +75,8 @@
 
 1. create account
 1. login
-1. get saved locales
-1. delete locale association with uer
+1. get saved locations
+1. delete location association with uer
 
 - ### User Auth Goals
 - post on form submission
@@ -90,10 +90,10 @@
 - when you press enter, the front end will make a POST request to the backend which triggers some function in your backend to make a GET request with the weather api
 - the user should then be presented with the information from the weather api (Dom manipulation)
 
-- the user should also have the option to save that locale via the backend saving that locales id into the locale table
+- the user should also have the option to save that location via the backend saving that locations id into the location table
 
-- now when the page loads there will be some function that makes an api call to the user to get all their saved locales (will return an array)
-- use JS and dom manipulation to create a div for each saved locale and display some information on it
+- now when the page loads there will be some function that makes an api call to the user to get all their saved locations (will return an array)
+- use JS and dom manipulation to create a div for each saved location and display some information on it
 
 <details><summary>API Cheat Sheet</summary>
 <p>
