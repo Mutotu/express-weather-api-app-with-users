@@ -1,0 +1,6 @@
+-Create an ERD
+-user many location
+-location will have many to many with user
+
+- Create a location model
+- Create an axios call to openweather.org
